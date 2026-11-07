@@ -1,0 +1,39 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #1b2340, #0a0d1a 70%);
+  color: #e8ebf5;
+  min-height: 100vh;
+}
+.app { max-width: 720px; margin: 0 auto; padding: 40px 16px; }
+h1 { margin: 0 0 4px; }
+.sub { color: #9aa3c0; margin: 0 0 24px; }
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+label span { display: block; font-size: 13px; color: #9aa3c0; margin-bottom: 4px; }
+input {
+  width: 100%; padding: 9px 10px; border-radius: 8px;
+  border: 1px solid #323a5c; background: #12172b; color: inherit;
+}
+input:focus { outline: 2px solid #6c8cff; border-color: transparent; }
+.actions { display: flex; gap: 10px; margin-top: 18px; }
+button {
+  padding: 10px 20px; border: 0; border-radius: 8px; cursor: pointer;
+  background: #6c8cff; color: #0a0d1a; font-weight: 600;
+}
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+button.ghost { background: transparent; color: #e8ebf5; border: 1px solid #323a5c; }
+.result h2 { margin: 0 0 14px; }
+.result small { font-size: 14px; color: #9aa3c0; font-weight: 400; }
+.bar-row { display: grid; grid-template-columns: 70px 1fr 56px; gap: 10px; align-items: center; margin: 8px 0; font-size: 14px; }
+.bar { background: #12172b; height: 10px; border-radius: 6px; overflow: hidden; }
+.bar div { height: 100%; background: #6c8cff; }
+.error { color: #ff8a8a; }
