@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from imblearn.over_sampling import SMOTE
 from xgboost import XGBClassifier
 
-FEATURES = ["z", "cam_col", "i", "delta", "MJD", "plate", "spec_obj_ID", "alpha", "field_ID"]
+FEATURES = ["alpha", "delta", "u", "g", "r", "i", "z", "redshift"]
 
 data = pd.read_csv(sys.argv[1])
 enc = LabelEncoder()
